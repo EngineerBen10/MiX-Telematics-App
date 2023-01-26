@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zCCKPFPmP4os7Q/9iqTkB1SLuYvdV9d9oOn/bq6EbUKothyOWE+diBlw1LibCgak78l1ppbHQCJ7d2IH+B+lmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Morris\\Documents\\VehiclePoisitions\\VehiclePoisitions\\VehiclePoisitions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Morris\\.nuget\\packages\\kdtree\\1.4.1\\kdtree.1.4.1.nupkg.sha512",
+    "C:\\Users\\Morris\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\Morris\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

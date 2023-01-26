@@ -1,0 +1,175 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "KdTree/1.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/KdTreeLib.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/KdTreeLib.dll": {}
+        }
+      },
+      "NetTopologySuite/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KdTree/1.4.1": {
+      "sha512": "yWbb35v/V9y88SLLMUPTlAN3pQEoPhDfZf9PApFnlU4kLtwVQ75U9vW5mW4/alQnLBuLKWBKcy4W5xK95mYsuA==",
+      "type": "package",
+      "path": "kdtree/1.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "kdtree.1.4.1.nupkg.sha512",
+        "kdtree.nuspec",
+        "lib/net45/KdTreeLib.dll",
+        "lib/net451/KdTreeLib.dll",
+        "lib/net452/KdTreeLib.dll",
+        "lib/net46/KdTreeLib.dll",
+        "lib/net461/KdTreeLib.dll",
+        "lib/net462/KdTreeLib.dll",
+        "lib/net47/KdTreeLib.dll",
+        "lib/net471/KdTreeLib.dll",
+        "lib/netcoreapp2.0/KdTreeLib.dll",
+        "lib/netstandard2.0/KdTreeLib.dll"
+      ]
+    },
+    "NetTopologySuite/2.5.0": {
+      "sha512": "5/+2O2ADomEdUn09mlSigACdqvAf0m/pVPGtIPEPQWnyrVykYY0NlfXLIdkMgi41kvH9kNrPqYaFBTZtHYH7Xw==",
+      "type": "package",
+      "path": "nettopologysuite/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "nettopologysuite.2.5.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "KdTree >= 1.4.1",
+      "NetTopologySuite >= 2.5.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Morris\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Morris\\Documents\\VehiclePoisitions\\VehiclePoisitions\\VehiclePoisitions.csproj",
+      "projectName": "VehiclePoisitions",
+      "projectPath": "C:\\Users\\Morris\\Documents\\VehiclePoisitions\\VehiclePoisitions\\VehiclePoisitions.csproj",
+      "packagesPath": "C:\\Users\\Morris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Morris\\Documents\\VehiclePoisitions\\VehiclePoisitions\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Morris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "KdTree": {
+            "target": "Package",
+            "version": "[1.4.1, )"
+          },
+          "NetTopologySuite": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
