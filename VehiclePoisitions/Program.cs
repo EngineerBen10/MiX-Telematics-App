@@ -31,7 +31,10 @@ namespace VehiclePosition
 
             TimeSpan timeTaken = timer.Elapsed;
 
+           
             Console.WriteLine("Time Taken:{0:c}",timeTaken);
+
+            Console.ReadKey();
         }
     }
 }
