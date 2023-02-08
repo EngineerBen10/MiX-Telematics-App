@@ -13,12 +13,13 @@ namespace VehiclePosition
             VehicleRepository vehicleRepository = new VehicleRepository(VEHICLE_COUNT);
             var vehicleList = vehicleRepository.GetVehiclesList();
             var vehiclePositionList = vehicleRepository.GetAllVehiclePositions();
-
+            var counter = 0;
             foreach(var position in vehiclePositionList)
             {
+                counter++;
                  var nearestPosition = vehicleList.GetNearestNeighbours(new[] { position.Longitude, position.Latitude },1);
 
-                 Console.WriteLine("Possition (Longitude: {0} Lattitude: {1} ) Nearest Coords: {2}",position.Longitude,position.Latitude, nearestPosition.First());
+                 Console.WriteLine("Position: {0} Nearest Vehicle: {1}",counter, nearestPosition.First());
               
             }
             watch.Stop();
