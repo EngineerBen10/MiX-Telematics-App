@@ -1,8 +1,4 @@
-﻿
-using System;
-using System.Text.Json;
-using VehiclePoisitions;
-using VehiclePoisitions.Repositories;
+﻿using VehiclePoisitions.Repositories;
 using System.Diagnostics;
 namespace VehiclePosition
 {
@@ -11,7 +7,7 @@ namespace VehiclePosition
         private const int VEHICLE_COUNT = 2000000;
         private static void Main(string[] args)
         {
-            var watch = System.Diagnostics.Stopwatch.StartNew();
+            var watch = Stopwatch.StartNew();
 
 
             VehicleRepository vehicleRepository = new VehicleRepository(VEHICLE_COUNT);
