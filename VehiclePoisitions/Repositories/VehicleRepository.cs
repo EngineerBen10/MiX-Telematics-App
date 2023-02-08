@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VehiclePoisitions.Models;
-using System.IO;
 using KdTree.Math;
 using KdTree;
-using System.Net.Http.Json;
-using System.Text.Json.Serialization;
-using System.Text.Json;
 
 namespace VehiclePoisitions.Repositories
 {
@@ -108,14 +100,13 @@ namespace VehiclePoisitions.Repositories
             };
 
            
-            return tempList.OrderBy(c=>c.Longitude).ToList();
+            return tempList;
         }
 
         public KdTree<float, string> GetVehiclesList()
         {
             var bytes = ReadFile();
             var vehicleList = new KdTree<float, string>(2, new FloatMath());
-            //Node node
             try
             {
 
@@ -161,8 +152,7 @@ namespace VehiclePoisitions.Repositories
         {
             DateTime pointOfReference = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc);
             long ticks = (long)(nanoseconds / ticksPerNanosecond);
-
-           
+            
             return pointOfReference.AddTicks(ticks);
         }
 
@@ -173,15 +163,13 @@ namespace VehiclePoisitions.Repositories
 
         private string ReadNullTerminated(BinaryReader br)
         {
-            var result = new StringBuilder();
-            int nc;
-            while ((nc = br.Read()) > 0)
+            string value = "";
+            char c;
+            while ((c = br.ReadChar()) != '\0')
             {
-                result.Append((char)nc);
+                value += c;
             }
-           
-           
-            return result.ToString();
+            return value;
         }
         private byte[]? ReadFile()
         {
