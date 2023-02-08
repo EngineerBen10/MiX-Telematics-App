@@ -19,7 +19,7 @@ namespace VehiclePosition
                 counter++;
                  var nearestPosition = vehicleList.GetNearestNeighbours(new[] { position.Longitude, position.Latitude },1);
 
-                 Console.WriteLine("Position: {0} Nearest Vehicle: {1}",counter, nearestPosition.First());
+                 Console.WriteLine("Position: {0} Nearest Vehicle {1} Latitude: {2} Longitude: {3}",counter, nearestPosition.First().Value, nearestPosition.First().Point[1], nearestPosition.First().Point[0]);
               
             }
             watch.Stop();
